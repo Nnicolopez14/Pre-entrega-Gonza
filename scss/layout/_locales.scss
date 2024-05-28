@@ -1,0 +1,19 @@
+main{
+    .ubicaciones{
+        display: flex;
+        flex-direction: row;
+        gap: 7.8125rem;
+        iframe{
+            width: 320px;
+        }
+    }
+    .imagen-roma{
+        width: 100%;
+        height: 800px;
+        .roma{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

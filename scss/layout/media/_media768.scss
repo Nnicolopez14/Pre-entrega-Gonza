@@ -1,0 +1,46 @@
+@media(max-width:768px){
+    .header{
+        nav{
+            .menu{
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+            }
+            .navbar{
+                flex-direction: column;
+                align-items: center;
+                padding: 0.5rem 0;
+            }
+            label{
+                display: inline-flex;
+                color: black;
+            }
+            #toggle:checked ~.menu{
+                height: 100%;
+            }
+        }
+    }
+    main{
+        flex-direction: column;
+        padding: 20px;
+    }
+    main{
+        .ubicaciones{
+            display: flex;
+            flex-direction: row;
+            iframe{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .imagen-roma{
+            width: 100%;
+            height: 800px;
+            .roma{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

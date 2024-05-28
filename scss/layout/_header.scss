@@ -1,0 +1,38 @@
+.header{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: black;
+    .logo img{
+        height: 300px;
+        width: 400px;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: darkgoldenrod;
+        padding: 1rem 1.5rem;
+        border-radius: 40px;
+        .navbar{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            li:hover{
+                transform: scale(1.1);
+            }
+            li a{
+                text-decoration: none;
+                font-size: 1.25rem;
+                color: black;
+                font-weight: 800;
+                gap: 20px;
+            }
+        }
+        & #toggle, & label{
+            display: none;
+        }
+    }
+    
+}

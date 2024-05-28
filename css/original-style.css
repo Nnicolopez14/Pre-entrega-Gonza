@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+ .header{
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    background-color: black;
+ }
+.header .logo img{
+    height: 300px;
+    width: 400px;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgoldenrod;
+    padding: 1rem 1.5rem;
+    border-radius: 40px;
+}
+.navbar{
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 800;
+    gap: 1.25rem;
+}
+nav #toggle, nav label{
+    display: none;
+}
+main{
+    background-color: black;
+    width: 100%;
+}
+footer{
+    background-color: darkgoldenrod;
+    height: 30px;
+}
+.barrio{
+    color: darkgoldenrod;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 100;
+}
+.video{
+    width: 100%;
+    height: 350px;
+}
+.ciro{
+    width: 100%;
+    height: 100%;
+}
+.grids{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 4;
+    grid-template-columns: 2;
+    gap: 10px;
+}
+
+.grids img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.img2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.img3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.ubicaciones{
+    display: flex;
+    flex-direction: row;
+    gap: 125px;
+
+}
+.roma{
+    width: 100%;
+}
+.pre-iconos{
+    width: 100%;
+    height: 100%;
+}
+.iconos{
+    height: 100%;
+}
+@media(max-width: 768px){
+    nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    nav .navbar{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    nav label{
+        display: inline-flex;
+        color: black;
+    }
+    nav #toggle:checked ~.menu{
+        height: 100%;
+    }
+    main{
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+@media(max-width: 375px){
+ .header .logo img{
+    width: 100%;
+ }   
+}
