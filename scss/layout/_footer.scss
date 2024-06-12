@@ -1,6 +1,6 @@
 footer{
-    background-color: darkgoldenrod;
-    color: black;
+    background-color: $color-principal;
+    color: $color-secundario;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,7 +18,7 @@ footer{
             cursor: pointer;
             margin: 0 10px;
             transition: 0.3s ease;
-            box-shadow: 0 2px 5px darkgoldenrod;
+            box-shadow: 0 2px 5px $color-principal;
         }
     }
 }

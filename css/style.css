@@ -63,7 +63,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: darkgoldenrod;
+    background-color: black;
     padding: 1rem 1.5rem;
     border-radius: 40px; }
     .header nav .navbar {
