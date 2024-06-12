@@ -28,7 +28,7 @@ footer {
 .grids {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: .625rem; }
   .grids img {
     width: 100%;
