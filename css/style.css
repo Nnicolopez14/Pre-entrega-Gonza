@@ -28,8 +28,7 @@ footer {
 .grids {
   display: grid;
   width: 100%;
-  grid-template-columns: 4;
-  grid-template-columns: 2;
+  grid-template-columns: repeat(4, 1fr);
   gap: .625rem; }
   .grids img {
     width: 100%;
@@ -204,6 +203,7 @@ main {
   .products-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 70px;
     height: 900px; }
